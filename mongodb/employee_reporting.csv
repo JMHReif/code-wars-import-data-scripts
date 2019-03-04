@@ -1,0 +1,10 @@
+employeeId,ReportsTo.managerId
+1,2
+2,
+3,2
+4,2
+5,2
+6,5
+7,5
+8,2
+9,5
