@@ -1,8 +1,8 @@
 #! /bin/bash
 
-mongoimport --db northwind --collection customer --type csv --headerline --file customers.csv --ignoreBlanks
+mongoimport --authenticationDatabase admin --username mongoadmin --password Testing123 --db northwind --collection customer --type csv --headerline --file customers.csv --ignoreBlanks
 
-mongoimport --db northwind --collection employee --type csv --headerline --file employees.csv --ignoreBlanks
+mongoimport --authenticationDatabase admin --username mongoadmin --password Testing123 --db northwind --collection employee --type csv --headerline --file employees.csv --ignoreBlanks
 
 #update employees with reporting hierarchy
 sed 1d employee_reporting.csv | while IFS="," read employeeId reportsTo
@@ -17,9 +17,9 @@ do
   fi
 done
 
-mongoimport --db northwind --collection product --type csv --headerline --file products.csv --ignoreBlanks
+mongoimport --authenticationDatabase admin --username mongoadmin --password Testing123 --db northwind --collection product --type csv --headerline --file products.csv --ignoreBlanks
 
-mongoimport --db northwind --collection order --type csv --headerline --file order_info.csv --ignoreBlanks
+mongoimport --authenticationDatabase admin --username mongoadmin --password Testing123 --db northwind --collection order --type csv --headerline --file order_info.csv --ignoreBlanks
 
 sed 1d order_details.csv | while IFS="," read orderId productId unitPrice quantityOrdered discount
 do
