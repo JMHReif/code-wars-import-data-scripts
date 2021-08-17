@@ -85,7 +85,7 @@ docker exec -it mymongo bash
 2. Change to expected directory
 [source,bash]
 --
-cd data
+cd data/db
 --
 
 [start=3]
