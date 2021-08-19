@@ -117,6 +117,8 @@ exit
 exit
 --
 
+*Note:* If you review the `.log` files for the updates to orders, you may notice a `syntax error` for a string literal. This is because, on the variables that are strings, I use the opening double-quote character, then have a single quote to close the command to expand the variable properly. This means there is are quotations that have not been closed (though are later closed after the single quote following the variable). However, the script works properly and all the data is correct.
+
 === Neo4j
 
 1. SSH into container
