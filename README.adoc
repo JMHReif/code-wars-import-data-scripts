@@ -168,3 +168,13 @@ I.e. for MariaDB, anything that is not a `.csv`, `.sql`, or `.sh`, including dat
 For Mongo, same as above, which means remove the `.wt`, as well as the diagnostic.data and journal folders.
 
 For Neo4j, you can remove the transactions, databases, and dbms folders. (All the csv files are safe in the `/import` directory)
+
+== Presentation
+
+PDF version of accompanying presentation is published to SpeakerDeck.
+
+* https://speakerdeck.com/jmhreif/code-wars-database-decisions-for-application-development[Code Wars: Database Decisions for Application Development^]
+
+== Related projects
+
+* https://github.com/JMHReif?tab=repositories&q=code-wars&type=&language=&sort=[Code Wars applications and import repositories^]
